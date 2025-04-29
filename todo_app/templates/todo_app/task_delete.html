@@ -1,7 +1,7 @@
 <a href="{% url 'task' %}">Go Back </a>
-<form action="" method="post">
+<form action="" method="POST">
     {% csrf_token %}
-    <p>Are you sure you want to delete task ? "{{task}}"</p>
+    <p>Are you sure you want to delete task ? "{{tasks}}"</p>
     <input type="submit" value="delete">
     
 </form>
